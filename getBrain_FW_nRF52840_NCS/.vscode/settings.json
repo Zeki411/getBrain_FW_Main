@@ -1,0 +1,30 @@
+{
+  "nrf-connect.topdir": "c:\\Users\\Lenovo\\ncs\\v1.7.0",
+  "nrf-connect.toolchain.path": "c:\\Users\\Lenovo\\ncs\\v1.7.0\\toolchain",
+  "nrf-connect.applications": [
+    "e:\\GitHubRepos\\getBrain\\getBrain_FW\\getBrain_FW_nRF52840_NCS"
+  ],
+  "files.associations": {
+    "getbrain_ble_service.h": "c",
+    "uuid.h": "c",
+    "std_types.h": "c",
+    "hci.h": "c",
+    "bluetooth.h": "c",
+    "ads1299.h": "c",
+    "ads1299_def.h": "c",
+    "ads1299_cfg.h": "c",
+    "string.h": "c",
+    "app_collectstreamdata.h": "c",
+    "gpio.h": "c",
+    "nrfx_gppi.h": "c",
+    "circularbuffer.h": "c",
+    "circularbuffer_def.h": "c",
+    "printk.h": "c",
+    "spi.h": "c",
+    "ring_buffer.h": "c",
+    "app_collectstream.h": "c",
+    "nrfx_gpiote.h": "c",
+    "device.h": "c",
+    "nrf_gpio.h": "c"
+  }
+}

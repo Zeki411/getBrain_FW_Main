@@ -1,0 +1,14 @@
+#ifndef __SERVICE_MANAGEBLE__H
+#define __SERVICE_MANAGEBLE__H
+
+#include <ArduinoBLE.h>
+
+#define SERVICE_MANAGEBLE_
+void Service_ManageBLE_Init(void);
+
+extern BLEService Service_ManageBLE_geBrainService;
+extern BLECharacteristic Service_ManageBLE_CollectStreamPacketChar;
+extern BLECharacteristic Service_ManageBLE_ConfigSensorPacketChar;
+extern BLECharacteristic Service_ManageBLE_PredictionPacketChar;
+
+#endif

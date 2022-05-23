@@ -1,0 +1,135 @@
+
+// / {
+// 	ads1299_gpios {
+// 		compatible = "gpio-ads1299";
+// 		ads1299io0: ads1299io_0{
+// 			gpios = <&gpio0 30 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 		ads1299io1: ads1299io_1{
+// 			gpios = <&gpio0 27 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 		ads1299io2: ads1299io_2{
+// 			gpios = <&gpio1 12 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 		ads1299io3: ads1299io_3{
+// 			gpios = <&gpio1 2 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 	};
+
+// 	leds {
+// 		compatible = "gpio-leds";
+// 		led1: led_1 {
+// 			gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;
+// 			label = "Green LED 1";
+// 		};	
+// 	};
+
+// 	buttons {
+// 		compatible = "gpio-keys";
+// 		button0: button_0 {
+// 			gpios = <&gpio0 30 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 		button1: button_1 {
+// 			gpios = <&gpio0 27 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 		button2: button_2 {
+// 			gpios = <&gpio1 12 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 		button3: button_3 {
+// 			gpios = <&gpio1 2 (GPIO_ACTIVE_LOW)>;
+// 		};
+// 	};
+
+// 	aliases {
+// 		ads1299idrdy = &button0;
+// 		ads1299orst = &button1;
+// 		ads1299ostart = &button2;
+// 		ads1299ocs = &button3;
+// 		ads1299opwdn = &led1;
+// 	};
+// };
+
+// &uart0 {
+// 	compatible = "nordic,nrf-uarte";
+// 	status = "okay";
+// 	current-speed = <115200>;
+// 	tx-pin = <35>;
+// 	rx-pin = <42>;
+// };
+
+// &uart1 {
+// 	status = "okay";
+// 	current-speed = <115200>;
+// 	rx-pin = <33>;
+// 	tx-pin = <36>;
+// };
+
+// &spi1 {
+// 	compatible = "nordic,nrf-spim";
+// 	status = "okay";
+// 	sck-pin =  <13>;
+// 	mosi-pin = <33>;
+// 	miso-pin = <40>;
+// 	// cs-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>; /* D10 */
+// };
+
+
+/ {
+	leds {
+		compatible = "gpio-leds";
+		led1: led_1 {
+			gpios = <&gpio1 10 GPIO_ACTIVE_LOW>;
+			label = "Green LED 1";
+		};	
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+		button0: button_0 {
+			gpios = <&gpio0 6 (GPIO_ACTIVE_LOW)>;
+		};
+		button1: button_1 {
+			gpios = <&gpio0 5 (GPIO_ACTIVE_LOW)>;
+		};
+		button2: button_2 {
+			gpios = <&gpio0 4 (GPIO_ACTIVE_LOW)>;
+		};
+		button3: button_3 {
+			gpios = <&gpio0 8 (GPIO_ACTIVE_LOW)>;
+		};
+	};
+
+	aliases {
+		ads1299idrdy = &button0;
+		ads1299orst = &button1;
+		ads1299ostart = &button2;
+		ads1299ocs = &button3;
+		ads1299opwdn = &led1;
+	};
+};
+
+&uart0 {
+	compatible = "nordic,nrf-uarte";
+	status = "okay";
+	current-speed = <115200>;
+	tx-pin = <24>;
+	rx-pin = <25>;
+	rts-pin = <1>;
+	cts-pin = <7>;
+};
+
+&uart1 {
+	status = "okay";
+	current-speed = <115200>;
+	rx-pin = <33>;
+	tx-pin = <36>;
+};
+
+&spi1 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	sck-pin =  <14>;
+	mosi-pin = <13>;
+	miso-pin = <15>;
+	// cs-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>; /* D10 */
+};
