@@ -150,7 +150,7 @@ set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|r
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|interrupts" "2;1;")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|tx-pin" "24")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|rx-pin" "25")
-set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|rts-pin" "5")
+set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|rts-pin" "1")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|cts-pin" "7")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|current-speed" "115200")
 set_target_properties(devicetree_target PROPERTIES "DT_PROP|/soc/uart@40002000|label" "UART_0")

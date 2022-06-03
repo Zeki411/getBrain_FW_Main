@@ -12,7 +12,7 @@ NeuralNetwork::NeuralNetwork()
 {
     error_reporter = new tflite::MicroErrorReporter();
 
-    model = tflite::GetModel(tflite_models_eeg_emotion);
+    model = tflite::GetModel(tflite_ddd_models_eeg_mlp);
     if (model->version() != TFLITE_SCHEMA_VERSION)
     {
         TF_LITE_REPORT_ERROR(error_reporter, "Model provided is schema version %d not equal to supported version %d.",

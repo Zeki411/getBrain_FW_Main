@@ -1090,7 +1090,7 @@
 /* Generic property macros: */
 #define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_EXISTS 1
 #define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_PH DT_N_S_soc_S_gpio_50000000
-#define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_VAL_pin 30
+#define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_VAL_pin 5
 #define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_VAL_pin_EXISTS 1
 #define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_VAL_flags 1
 #define DT_N_S_buttons_S_button_1_P_gpios_IDX_0_VAL_flags_EXISTS 1
@@ -1190,7 +1190,7 @@
 /* Generic property macros: */
 #define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_EXISTS 1
 #define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_PH DT_N_S_soc_S_gpio_50000000
-#define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_VAL_pin 28
+#define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_VAL_pin 4
 #define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_VAL_pin_EXISTS 1
 #define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_VAL_flags 1
 #define DT_N_S_buttons_S_button_2_P_gpios_IDX_0_VAL_flags_EXISTS 1
@@ -5320,7 +5320,7 @@
 #define DT_N_S_soc_S_uart_40002000_P_tx_pin_EXISTS 1
 #define DT_N_S_soc_S_uart_40002000_P_rx_pin 25
 #define DT_N_S_soc_S_uart_40002000_P_rx_pin_EXISTS 1
-#define DT_N_S_soc_S_uart_40002000_P_rts_pin 5
+#define DT_N_S_soc_S_uart_40002000_P_rts_pin 1
 #define DT_N_S_soc_S_uart_40002000_P_rts_pin_EXISTS 1
 #define DT_N_S_soc_S_uart_40002000_P_cts_pin 7
 #define DT_N_S_soc_S_uart_40002000_P_cts_pin_EXISTS 1

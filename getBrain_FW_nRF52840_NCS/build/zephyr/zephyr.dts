@@ -128,7 +128,7 @@
 			current-speed = < 0x1c200 >;
 			tx-pin = < 0x18 >;
 			rx-pin = < 0x19 >;
-			rts-pin = < 0x5 >;
+			rts-pin = < 0x1 >;
 			cts-pin = < 0x7 >;
 		};
 		uart1: arduino_serial: uart@40028000 {
@@ -498,11 +498,11 @@
 			label = "Push button switch 0";
 		};
 		button1: button_1 {
-			gpios = < &gpio0 0x1e 0x1 >;
+			gpios = < &gpio0 0x5 0x1 >;
 			label = "Push button switch 1";
 		};
 		button2: button_2 {
-			gpios = < &gpio0 0x1c 0x1 >;
+			gpios = < &gpio0 0x4 0x1 >;
 			label = "Push button switch 2";
 		};
 		button3: button_3 {

@@ -629,10 +629,10 @@
    gpios = <&gpio0 6 ((1 << 0))>;
   };
   button1: button_1 {
-   gpios = <&gpio0 30 ((1 << 0))>;
+   gpios = <&gpio0 5 ((1 << 0))>;
   };
   button2: button_2 {
-   gpios = <&gpio0 28 ((1 << 0))>;
+   gpios = <&gpio0 4 ((1 << 0))>;
   };
   button3: button_3 {
    gpios = <&gpio0 8 ((1 << 0))>;
@@ -652,6 +652,8 @@
  current-speed = <115200>;
  tx-pin = <24>;
  rx-pin = <25>;
+ rts-pin = <1>;
+ cts-pin = <7>;
 };
 &uart1 {
  status = "okay";
